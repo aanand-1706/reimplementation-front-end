@@ -325,8 +325,8 @@ export interface SignedUpTeam {
     parent_id: number;
     users?: Array<{
       id: number;
+      username: string;
       name: string;
-      full_name: string;
     }>;
   };
   sign_up_topic?: SignUpTopic;
@@ -353,7 +353,7 @@ export interface JoinTeamRequest {
   participant: {
     id: number;
     user_id: number;
-    user_name: string;
+    username: string;
     user_email: string;
     handle: string;
   };
