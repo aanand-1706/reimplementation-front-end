@@ -39,7 +39,7 @@ export interface IUserResponse {
   email_on_submission: boolean;
   email_on_review_of_review: boolean;
   role: { id: number; name: string };
-  parent: { id: number | null; name: string | null };
+  parent: { id: number | null; username: string | null };
   institution: { id: number | null; name: string | null };
   date_format_pref: string;
   created_at: string;
@@ -60,9 +60,9 @@ export interface IParticipantResponse {
 }
 
 export interface IUserRequest {
+  username: string;
   name: string;
   email: string;
-  full_name: string;
   role_id: number;
   parent_id?: number | null;
   institution_id: number;
@@ -179,7 +179,7 @@ export interface ITAResponse {
   email_on_submission: boolean;
   email_on_review_of_review: boolean;
   role: { id: number; name: string };
-  parent: { id: number | null; name: string | null };
+  parent: { id: number | null; username: string | null };
   institution: { id: number | null; name: string | null };
 }
 
