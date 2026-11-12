@@ -19,6 +19,7 @@ export interface IInstitution {
 
 export interface IInstructor {
   id?: number;
+  username: string;
   name: string;
   email?: string;
 }
