@@ -189,8 +189,8 @@ export interface ITARequest {
 
 export interface ILoggedInUser {
   id: number;
+  username: string;
   name: string;
-  full_name: string;
   role: string;
   institution_id: number;
 }

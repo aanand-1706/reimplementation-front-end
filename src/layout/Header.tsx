@@ -155,9 +155,7 @@ const Header: React.FC = () => {
                 </Nav.Link>
               </Nav>
               {visible ? (
-                <Nav.Item className="text-light ps-md-3 pe-md-3">
-                  User: {auth.user.full_name}
-                </Nav.Item>
+                <Nav.Item className="text-light ps-md-3 pe-md-3">User: {auth.user.name}</Nav.Item>
               ) : (
                 <Nav.Item className="text-light ps-md-3 pe-md-3">
                   <div
